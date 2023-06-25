@@ -121,7 +121,25 @@ function App() {
             </table>
           </div>
         )}
-        {selectedPage === 'professores' && <h2>Nossos Profissionais</h2>}
+        {selectedPage === 'professores' && (
+          <div>
+            <h2>Nossos Profissionais</h2>
+            <p>
+              Conheça nossa equipe de profissionais altamente qualificados e
+              dedicados a ajudar você a alcançar seus objetivos. Cada um deles
+              traz consigo uma vasta experiência e conhecimento nas áreas de
+              condicionamento físico, nutrição e bem-estar. Estamos prontos para
+              oferecer orientação personalizada e apoio contínuo em sua jornada
+              de transformação.
+            </p>
+            <ul>
+              <li>Nome do Professor 1</li>
+              <li>Nome do Professor 2</li>
+              <li>Nome do Professor 3</li>
+              {/* Adicione mais professores aqui */}
+            </ul>
+          </div>
+        )}
         {selectedPage === 'metodos' && (
           <div>
             <h2>Metodologia de Ensino</h2>
@@ -158,18 +176,30 @@ function App() {
             </p>
           </div>
         )}
-        {selectedPage === 'redes-sociais' && <h2>Redes Sociais</h2>}
+        {selectedPage === 'redes-sociais' && (
+          <div>
+            <h2>Redes Sociais</h2>
+            <p>
+              Siga-nos em nossas redes sociais para ficar por dentro das últimas
+              novidades, dicas de treinamento e eventos especiais:
+            </p>
+            <ul>
+              <li>Instagram: @academiadesistemas</li>
+              <li>Facebook: Academia de Sistemas</li>
+              <li>Twitter: @academia_sistemas</li>
+              <li>YouTube: Academia de Sistemas</li>
+              {/* Adicione mais redes sociais aqui */}
+            </ul>
+          </div>
+        )}
         {selectedPage === 'pagina' && (
           <div className="intro">
-            <p>
-              Aqui na Academia de Sistemas temos um compromisso com você, aluno,
-              oferecer equipamentos e profissionais de ponta para que seu
-              objetivo seja alcançado de maneira eficaz e saudável. <br />
-              Você encontrará as mais diversas modalidades, com métodos de
-              última geração, professores prestativos e certificados. O curso
-              ninja conta com as mais diversas armas, shurikens, katanas e kendo
-              sticks, tudo para você sentir que está no Japão feudal e
-              embarcando de vez nesta aventura.
+            <p className="p">
+              Bem-vindo à nossa academia! Aqui, estamos comprometidos em ajudar
+              você a alcançar seus objetivos de condicionamento físico e saúde
+              de maneira eficaz e saudável. Nossa equipe de profissionais
+              altamente qualificados e experientes está pronta para guiá-lo em
+              sua jornada de transformação.
             </p>
           </div>
         )}
